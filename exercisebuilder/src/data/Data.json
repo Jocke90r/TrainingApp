@@ -1,0 +1,34 @@
+[
+    {
+        "id":1,
+        "type": "interval",
+        "name": "75 interval",
+        "length": 75,
+        "times": 10,
+        "sets": null
+    },
+    {
+        "id":2,
+        "type": "strength",
+        "name": "push-ups",
+        "length": null,
+        "times": 15,
+        "sets": 4
+    },
+    {
+        "id":3,
+        "type": "interval",
+        "name": "150 interval",
+        "length": 150,
+        "times": 5,
+        "sets": null
+    },
+    {
+        "id":4,
+        "type": "running",
+        "name": "5 km",
+        "length": 5000,        
+        "times": null,
+        "sets": null
+    }
+]
