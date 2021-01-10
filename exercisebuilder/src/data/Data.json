@@ -2,7 +2,7 @@
     {
         "id":1,
         "type": "interval",
-        "name": "75 interval",
+        "name": "75m interval",
         "length": 75,
         "times": 10,
         "sets": null
@@ -18,7 +18,7 @@
     {
         "id":3,
         "type": "interval",
-        "name": "150 interval",
+        "name": "150m interval",
         "length": 150,
         "times": 5,
         "sets": null

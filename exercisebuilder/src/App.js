@@ -6,8 +6,9 @@ function App() {
   return (
     <div>
      <Layout>
-       <ExerciseBuilder/>
+       
        <ExerciseList/>
+       <ExerciseBuilder/>
      </Layout>
      
     </div>
