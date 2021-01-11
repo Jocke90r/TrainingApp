@@ -5,7 +5,7 @@ function exercisePart(props) {
     return (
         <div className={classes.Div}>
             <ul className={classes.Ul}>
-                <button className={classes.Button}>
+                <button className={classes.Button} onClick={props.click}>
                     <div>{props.name}</div>
                 </button>
                 <div>Length: {props.length}</div>

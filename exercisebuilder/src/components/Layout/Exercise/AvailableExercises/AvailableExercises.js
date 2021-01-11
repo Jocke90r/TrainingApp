@@ -1,11 +1,13 @@
 import React from 'react'
 import data from '../../../../data/Data.json'
 import ExercisePart from '../ExercisePart/ExercisePart'
-function exerciseList() {
+//Fetch all exercises and set them on screen
+function exerciseList(props) {
     let list = data.map((data) => {
         return (
             <ExercisePart
                 id={data.id}
+                click={props.click}
                 type={data.type}
                 name={data.name}
                 length={data.length}
@@ -19,7 +21,6 @@ function exerciseList() {
 
 }
 export default exerciseList
-//Någonting blir fel vid map och försöker att skicka ut den datan
 /* id={data.id}
         type={data.type}
         name={data.name}
