@@ -2,7 +2,7 @@ import React from 'react'
 import data from '../../../../data/Data.json'
 import ExercisePart from '../ExercisePart/ExercisePart'
 //Fetch all exercises and set them on screen
-function exerciseList(props) {
+function AvailableExercises(props) {
     let list = data.map((data) => {
         return (
             <ExercisePart
@@ -20,7 +20,7 @@ function exerciseList(props) {
 
 
 }
-export default exerciseList
+export default AvailableExercises
 /* id={data.id}
         type={data.type}
         name={data.name}

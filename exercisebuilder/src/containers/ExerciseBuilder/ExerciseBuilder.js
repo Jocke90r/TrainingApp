@@ -2,7 +2,7 @@ import React from 'react'
 import Aux from '../../hoc/Auxiliary'
 import AvailableExercises from '../../components/Layout/Exercise/AvailableExercises/AvailableExercises'
 class ExerciseBuilder extends React.Component {
-    state = 
+    state =
         {
             TotalExercise: [{
                 id: 1,
@@ -20,16 +20,20 @@ class ExerciseBuilder extends React.Component {
                 times: 5,
                 sets: null
             }]
-        }        
-    
+        }
+    AppendExercise(event) {
+        console.log("appendExercise")
+        const addExercise = this.state.TotalExercise
+        addExercise.push("event.target.value")
+        this.setState({ TotalExercise: addExercise })
+    }
     render() {
         return (
             <Aux>
-                <AvailableExercises></AvailableExercises>
+                <AvailableExercises click={this.AppendExercise} />
+
                 <h1>Training Program</h1>
-                <div>{this.state.TotalExercise.map( exercises =>{
-                    return (<div>{exercises.name}</div>)
-                })}</div>
+
             </Aux>
         )
     }
